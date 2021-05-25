@@ -1,11 +1,11 @@
 <footer>
-  <small>&copy nanoFreaks</small>
+	<small>&copy nanoFreaks</small>
 </footer>
 
 <style>
-  footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+	footer {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 </style>
