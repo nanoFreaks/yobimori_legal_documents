@@ -1,6 +1,9 @@
 <script lang="ts" context="module">
   import type { Load } from "@sveltejs/kit";
 
+  export const hydrate = true;
+  export const router = true;
+
   export const load: Load = async ({ fetch }) => {
     const res = await fetch('/getDocuments');
     const json = await res.json();

@@ -11,7 +11,8 @@ const config = {
 			base: '/yobimori_legal_documents',
 			assets: '/yobimori_legal_documents'
 		},
-		hydrate: false
+		hydrate: false,
+		router: false
 	}
 };
 

@@ -4,7 +4,7 @@
 
 <header>
   <h1>
-    <a href="/">
+    <a href="{base}/">
       <picture>
         <source srcset="{base}/yobimori.webp" />
         <img src="{base}/yobimori.png" alt="yobimoriのロゴ" />
