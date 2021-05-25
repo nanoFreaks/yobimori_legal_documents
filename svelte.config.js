@@ -10,7 +10,8 @@ const config = {
 		paths: {
 			base: '/yobimori_legal_documents',
 			assets: '/yobimori_legal_documents'
-		}
+		},
+		hydrate: false
 	}
 };
 
