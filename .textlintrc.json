@@ -1,0 +1,8 @@
+{
+	"rules": {
+		"no-mix-dearu-desumasu": true,
+		"ja-no-redundant-expression": true,
+		"ja-no-abusage": true,
+		"ja-no-mixed-period": true
+	}
+}
