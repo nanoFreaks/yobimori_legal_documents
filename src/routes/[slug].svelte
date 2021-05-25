@@ -1,9 +1,10 @@
 <script context="module" lang="ts">
   import type { Load } from '@sveltejs/kit';
+  import { base } from '$app/paths';
   export const hydrate = false;
   export const router = false;
   export const load: Load = async ({ page, fetch }) => {
-    const res = await fetch(`/${page.params.slug}.json`);
+    const res = await fetch(`${base}/${page.params.slug}.json`);
     const article = await res.json();
     return {
       props: {

@@ -1,11 +1,12 @@
 <script lang="ts" context="module">
   import type { Load } from "@sveltejs/kit";
+  import { base as b } from '$app/paths';
 
   export const hydrate = true;
   export const router = true;
 
   export const load: Load = async ({ fetch }) => {
-    const res = await fetch('/getDocuments');
+    const res = await fetch(`${b}/getDocuments`);
     const json = await res.json();
     return {
       props: {
