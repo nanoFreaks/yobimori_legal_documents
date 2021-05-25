@@ -8,15 +8,16 @@
 
 		
 
-		<link rel="modulepreload" href="/yobimori_legal_documents/_app/start-099d5958.js">
+		<link rel="modulepreload" href="/yobimori_legal_documents/_app/start-572f829e.js">
 		<link rel="modulepreload" href="/yobimori_legal_documents/_app/chunks/vendor-acd2b515.js">
-		<link rel="modulepreload" href="/yobimori_legal_documents/_app/pages/__layout.svelte-f31527e3.js">
+		<link rel="modulepreload" href="/yobimori_legal_documents/_app/chunks/paths-45dac81d.js">
+		<link rel="modulepreload" href="/yobimori_legal_documents/_app/pages/__layout.svelte-1360952b.js">
 		<link rel="modulepreload" href="/yobimori_legal_documents/_app/pages/index.svelte-68dedc52.js">
 		<link rel="stylesheet" href="/yobimori_legal_documents/_app/assets/start-a8cd1609.css">
 		<link rel="stylesheet" href="/yobimori_legal_documents/_app/assets/pages/__layout.svelte-6c518ef2.css">
 
 		<script type="module">
-			import { start } from "/yobimori_legal_documents/_app/start-099d5958.js";
+			import { start } from "/yobimori_legal_documents/_app/start-572f829e.js";
 			start({
 				target: document.body,
 				paths: {"base":"/yobimori_legal_documents","assets":"/yobimori_legal_documents"},
@@ -25,20 +26,7 @@
 				route: true,
 				spa: false,
 				trailing_slash: "never",
-				hydrate: {
-					status: 200,
-					error: null,
-					nodes: [
-						import("/yobimori_legal_documents/_app/pages/__layout.svelte-f31527e3.js"),
-						import("/yobimori_legal_documents/_app/pages/index.svelte-68dedc52.js")
-					],
-					page: {
-						host: location.host, // TODO this is redundant
-						path: "/",
-						query: new URLSearchParams(""),
-						params: {}
-					}
-				}
+				hydrate: null
 			});
 		</script>
 	</head>
@@ -46,8 +34,8 @@
 		<div id="svelte">
 
 
-<header class="svelte-au2lff"><h1 class="svelte-au2lff"><a href="/"><picture class="svelte-au2lff"><source srcset="/yobimori.webp">
-        <img src="/yobimori.png" alt="yobimoriのロゴ" class="svelte-au2lff"></picture></a></h1>
+<header class="svelte-au2lff"><h1 class="svelte-au2lff"><a href="/"><picture class="svelte-au2lff"><source srcset="/yobimori_legal_documents/yobimori.webp">
+        <img src="/yobimori_legal_documents/yobimori.png" alt="yobimoriのロゴ" class="svelte-au2lff"></picture></a></h1>
 </header>
 <div class="wrapper svelte-16fdfzd"><main><h3><a href="/example">例</a></h3><h3><a href="/terms_of_service">利用規約</a></h3></main></div>
 <footer class="svelte-w4rjxm"><small>© nanoFreaks</small>
@@ -55,7 +43,7 @@
 
 
 
-	<script type="svelte-data" url="/getDocuments">{"status":200,"statusText":"","headers":{"content-type":"application/json"},"body":"[{\"title\":\"例\",\"href\":\"example\"},{\"title\":\"利用規約\",\"href\":\"terms_of_service\"}]"}</script>
+	
 </div>
 	</body>
 </html>
