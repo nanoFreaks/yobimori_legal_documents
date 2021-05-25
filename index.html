@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<!-- <link rel="icon" href="/icon.png" /> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+
+		
+
+		<link rel="modulepreload" href="/./_app/start-099d5958.js">
+		<link rel="modulepreload" href="/./_app/chunks/vendor-acd2b515.js">
+		<link rel="modulepreload" href="/./_app/pages/__layout.svelte-f31527e3.js">
+		<link rel="modulepreload" href="/./_app/pages/index.svelte-68dedc52.js">
+		<link rel="stylesheet" href="/./_app/assets/start-a8cd1609.css">
+		<link rel="stylesheet" href="/./_app/assets/pages/__layout.svelte-6c518ef2.css">
+
+		<script type="module">
+			import { start } from "/./_app/start-099d5958.js";
+			start({
+				target: document.body,
+				paths: {"base":"","assets":"/."},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/./_app/pages/__layout.svelte-f31527e3.js"),
+						import("/./_app/pages/index.svelte-68dedc52.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "/",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<div id="svelte">
+
+
+<header class="svelte-au2lff"><h1 class="svelte-au2lff"><a href="/"><picture class="svelte-au2lff"><source srcset="/yobimori.webp">
+        <img src="/yobimori.png" alt="yobimoriのロゴ" class="svelte-au2lff"></picture></a></h1>
+</header>
+<div class="wrapper svelte-16fdfzd"><main><h3><a href="/example">例</a></h3><h3><a href="/terms_of_service">利用規約</a></h3></main></div>
+<footer class="svelte-w4rjxm"><small>© nanoFreaks</small>
+</footer>
+
+
+
+	<script type="svelte-data" url="/getDocuments">{"status":200,"statusText":"","headers":{"content-type":"application/json"},"body":"[{\"title\":\"例\",\"href\":\"example\"},{\"title\":\"利用規約\",\"href\":\"terms_of_service\"}]"}</script>
+</div>
+	</body>
+</html>
