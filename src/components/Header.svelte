@@ -1,13 +1,15 @@
 <script lang="ts">
   import { base } from '$app/paths';
+  import webp from '$lib/assets/yobimori.webp';
+  import png from '$lib/assets/yobimori.png';
 </script>
 
 <header>
   <h1>
     <a href="{base}/">
       <picture>
-        <source srcset="{base}/yobimori.webp" />
-        <img src="{base}/yobimori.png" alt="yobimoriのロゴ" />
+        <source srcset={webp} />
+        <img src={png} alt="yobimoriのロゴ" />
       </picture>
     </a>
   </h1>
