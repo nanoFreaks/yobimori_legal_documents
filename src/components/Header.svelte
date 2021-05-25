@@ -1,9 +1,13 @@
+<script lang="ts">
+  import { base } from '$app/paths';
+</script>
+
 <header>
   <h1>
     <a href="/">
       <picture>
-        <source srcset=/yobimori.webp />
-        <img src=/yobimori.png alt="yobimoriのロゴ" />
+        <source srcset="{base}/yobimori.webp" />
+        <img src="{base}/yobimori.png" alt="yobimoriのロゴ" />
       </picture>
     </a>
   </h1>
