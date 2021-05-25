@@ -1,6 +1,9 @@
 import preprocess from 'svelte-preprocess';
 import adapter from '@sveltejs/adapter-static';
 
+console.log(process.env.NODE_ENV);
+const path = process.env.NODE_ENV === 'development' ? '' : '/yobimori_legal_documents';
+
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	preprocess: preprocess(),
@@ -8,8 +11,8 @@ const config = {
 	kit: {
 		adapter: adapter(),
 		paths: {
-			base: '/yobimori_legal_documents',
-			assets: '/yobimori_legal_documents'
+			base: path,
+			assets: path
 		}
 	}
 };

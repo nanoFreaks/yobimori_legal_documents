@@ -1,38 +1,56 @@
-# create-svelte
+# yobimori 法的文書
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte);
+このリポジトリでは、 yobimori に関わる法的文書を管理、公開します。
 
-## Creating a project
+## 公開場所
 
-If you're seeing this, you've probably already done this step. Congrats!
+https://nanofreaks.github.io/yobimori_legal_documents/
 
-```bash
-# create a new project in the current directory
-npm init svelte@next
+## 現在管理している文書
 
-# create a new project in my-app
-npm init svelte@next my-app
+- [利用規約](https://nanofreaks.github.io/yobimori_legal_documents/terms_of_service)
+
+## 編集方法
+
+`/docs`ディレクトリ以下の Markdown ファイル(`*.md`)を編集することで修正を行えますが、
+編集時は Pull Request を作成し、レビューを受けるようにしてください。
+
+編集作業については GitHub 上、もしくはローカルにリポジトリをクローンして編集できます。
+
+Markdown の記法については[Markdown 記法 チートシート](https://qiita.com/Qiita/items/c686397e4a0f4f11683d)などを参考にしてください。
+
+## 手元で見た目を確認する場合
+
+Markdown は GFM(GitHub Flavored Markdown)を採用しており、GitHub 上でプレビューされるものに近い状態で公開されますが、
+スタイルや、ヘッダ、フッタなども合わせて確認する場合は手元で実行する必要があります。
+
+以下の作業には Node.js(14+), pnpm(6+) を使用します。
+
+### リポジトリのクローン
+
+```sh
+git clone https://github.com/nanoFreaks/yobimori_legal_documents.git
+cd yobimori_legal_documents
 ```
 
-> Note: the `@next` is temporary
+### 依存関係の解消
 
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+```sh
+pnpm i
 ```
 
-## Building
+### サーバの構築
 
-Before creating a production version of your app, install an [adapter](https://kit.svelte.dev/docs#adapters) for your target environment. Then:
-
-```bash
-npm run build
+```sh
+pnpm dev
 ```
 
-> You can preview the built app with `npm run preview`, regardless of whether you installed an adapter. This should _not_ be used to serve your app in production.
+デフォルトでは http://localhost:3000 でホストされます。
+
+### その他
+
+- ビルド: `pnpm build`
+- ソースコード
+  - Lint: `pnpm lint`
+  - Format: `pnpm format`
+- 日本語の用法チェック: `pnpm textlint`

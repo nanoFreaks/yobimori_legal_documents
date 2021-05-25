@@ -1,11 +1,11 @@
-name: GitHub Pages
+name: Lint checks
 
 on:
-  push:
+  pull_request:
     branches: [main]
 
 jobs:
-  build:
+  lint:
     runs-on: ubuntu-latest
 
     strategy:
@@ -33,10 +33,9 @@ jobs:
           run_install: true
       - name: Install dependencies
         run: pnpm i
-      - name: Build SvelteKit
+      - name: Lint Check
+        run: pnpm lint
+      - name: JP Lint Check
+        run: pnpm textlint
+      - name: Build Check
         run: pnpm build
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
