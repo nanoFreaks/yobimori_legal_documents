@@ -12,16 +12,16 @@ https://nanofreaks.github.io/yobimori_legal_documents/
 
 ## 編集方法
 
-`/docs`ディレクトリ以下のMarkdownファイル(`*.md`)を編集することで修正を行えますが、
-編集時はPull Requestを作成し、レビューを受けるようにしてください。
+`/docs`ディレクトリ以下の Markdown ファイル(`*.md`)を編集することで修正を行えますが、
+編集時は Pull Request を作成し、レビューを受けるようにしてください。
 
-編集作業についてはGitHub上、もしくはローカルにリポジトリをクローンして編集できます。
+編集作業については GitHub 上、もしくはローカルにリポジトリをクローンして編集できます。
 
-Markdownの記法については[Markdown記法 チートシート](https://qiita.com/Qiita/items/c686397e4a0f4f11683d)などを参考にしてください。
+Markdown の記法については[Markdown 記法 チートシート](https://qiita.com/Qiita/items/c686397e4a0f4f11683d)などを参考にしてください。
 
 ## 手元で見た目を確認する場合
 
-MarkdownはGFM(GitHub Flavored Markdown)を採用しており、GitHub上でプレビューされるものに近い状態で公開されますが、
+Markdown は GFM(GitHub Flavored Markdown)を採用しており、GitHub 上でプレビューされるものに近い状態で公開されますが、
 スタイルや、ヘッダ、フッタなども合わせて確認する場合は手元で実行する必要があります。
 
 以下の作業には Node.js(14+), pnpm(6+) を使用します。
@@ -51,6 +51,6 @@ pnpm dev
 
 - ビルド: `pnpm build`
 - ソースコード
-	- Lint: `pnpm lint`
-	- Format: `pnpm format`
+  - Lint: `pnpm lint`
+  - Format: `pnpm format`
 - 日本語の用法チェック: `pnpm textlint`
