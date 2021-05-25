@@ -7,6 +7,10 @@ const config = {
 
 	kit: {
 		adapter: adapter(),
+		paths: {
+			base: '/yobimori_legal_documents',
+			assets: '/yobimori_legal_documents'
+		}
 	}
 };
 
