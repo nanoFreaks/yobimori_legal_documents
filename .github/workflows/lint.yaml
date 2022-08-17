@@ -35,7 +35,7 @@ jobs:
         run: pnpm i
       - name: Lint Check
         run: pnpm lint
-      - name: JP Lint Check
-        run: pnpm textlint
+      # - name: JP Lint Check
+      #   run: pnpm textlint
       - name: Build Check
         run: pnpm build
