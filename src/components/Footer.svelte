@@ -1,5 +1,5 @@
 <footer>
-	<small>&copy nanoFreaks</small>
+	<small>&copy Yobimori Co., Ltd</small>
 </footer>
 
 <style>
